@@ -1,0 +1,102 @@
+body{
+    background: url('../img/01.png') no-repeat;
+    -webkit-background-size: cover;
+    margin: 0 auto;
+}
+html{
+    height: 100%;
+    margin: 0 auto;
+}
+header{
+    margin-top: 5rem;
+    background: url('../img/Слой 5 копия.png') no-repeat center top;
+    width: 100%;
+    height: 100vh;
+    -webkit-background-size: contain;
+
+    display: flex;
+    align-items: flex-end;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    width: 97%;
+
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+header li{
+    list-style: none;
+    width: 10%;
+    height: 5rem;
+
+}
+header button{
+    background: url('../img/Слой 10.png') no-repeat;
+   -webkit-background-size: cover;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+}
+.products{
+    text-align: center;
+}
+.products a{
+    margin-top: 5rem;
+    margin-right: 5rem;
+}
+
+.marketing{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+h2{
+    color: white;
+    font-size: 52px;
+    text-align: center;
+}
+.marketing__cart{
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+.about{
+    background: url('../img/Слой 48.png') no-repeat center;
+    -webkit-background-size: cover;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    padding-bottom: 8rem;
+}
+.about h1{
+    font-size: 52px;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+}
+.contact{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+}
+footer{
+    background: url('../img/Слой 5 копия 3.png') no-repeat;
+    -webkit-background-size: cover;
+    text-align: center;
+    padding-top: 5rem;
+}
+footer p{
+    font-size: 24px;
+    color: white;
+    padding-bottom: 2rem;
+}
