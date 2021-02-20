@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="cart_10">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>Leveling</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Choose option</p>
+                                <select id="select_10">
+                                    <option selected value="100">Leveling</option>
+                                </select>
+                            </div>
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_10">
+                            </div>
+                        </div>
+                            <div class="cart__main__footer__options">
+                                <p>Choose time</p>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="time_12" value="15" onchange="document.getElementById('price_10').innerHTML = +this.value + +2">
+                                    <label for="time_12">12 hours</label>
+                                    <label for="time_12">15$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="time_24" value="19" onchange="document.getElementById('price_10').innerHTML = +this.value + +2">
+                                    <label for="time_24">24 hours</label>
+                                    <label for="time_24">19$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="time_36" value="20" onchange="document.getElementById('price_10').innerHTML = +this.value + +2">
+                                    <label for="time_36">36 hours</label>
+                                    <label for="time_36">20$</label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="cart__main__footer__buy">
+                        <p id="price_10">1</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

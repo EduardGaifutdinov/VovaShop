@@ -27,6 +27,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainApp',
+    'mythic',
+    'FAQ',
+    'nathria',
+    'torghast',
+    'sendmail',
+    'leveling',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +65,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'WoW_Darkness.wsgi.application'
 
+DEFAULT_FROM_EMAIL = 'e.gaifutdinov@wellyes.ru'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'e.gaifutdinov@wellyes.ru'
+EMAIL_HOST_PASSWORD = '05081999'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases

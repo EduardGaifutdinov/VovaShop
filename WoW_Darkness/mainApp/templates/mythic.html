@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+                        <script>
+                            function changePriceOpt(opt, diff, priceId) {
+                                if(opt.checked === true){
+                                    var price = document.getElementById(priceId).innerHTML;
+                                    price = +price + +opt.value;
+                                    document.getElementById(priceId).innerHTML = price;
+                                }
+                                else{
+                                    document.getElementById(priceId).innerHTML -= opt.value;
+                                }
+                            }
+
+                            function changePriceOptRad(opt, diff){
+                                var price = document.getElementById(priceId).innerHTML;
+                            }
+                        </script>
+         <div class="cart_1">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>MYTHIC +10</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="http://127.0.0.1:8000/sendMail">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Choose difficulty</p>
+                                <select name="select">
+                                   <option selected value="100">MYTHIC</option>
+                                </select>
+                            </div>
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail">
+                            </div>
+                        </div>
+                            <div class="cart__main__footer__options">
+                                <p>Choose option</p>
+                                <div class="input">
+                                    <input class="options" type="checkbox" name="option" id="timer" value="{{ timer_1 }}" onchange="alert(this.value)">
+                                    <label for="timer">Timer</label>
+                                    <label for="timer">1$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="checkbox" name="option" id="loot" value="2" onchange="changePriceOpt(this, document.getElementById('select_1').value, 'price_3_1')">
+                                    <label for="loot">Loot traider</label>
+                                    <label for="loot">2$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="checkbox" name="option" id="specific" value="3" onchange="changePriceOpt(this, document.getElementById('select_1').value, 'price_3_1')">
+                                    <label for="specific">Speciffic dungeon</label>
+                                    <label for="specific">3$</label>
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="cart__main__footer__buy">
+                        <p id="price_3_1">1</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+         </div>
+
+ <div class="cart_2">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>MYTHIC 2-15</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="http://127.0.0.1:8000/sendMail">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Choose difficulty</p>
+                                <select name="tittle" id="select_2" onchange="document.getElementById('price_3_2').innerHTML = +document.getElementById('select_2').value + 5;
+                                                                document.getElementById('timer_2').checked = false; document.getElementById('specific_2').checked = false;">
+                                    <option selected value="2" >MYTHIC +2</option>
+                                    <option selected value="3">MYTHIC +3</option>
+                                    <option selected value="4">MYTHIC +4</option>
+                                    <option selected value="5">MYTHIC +5</option>
+                                    <option selected value="6">MYTHIC +6</option>
+                                    <option selected value="7">MYTHIC +7</option>
+                                    <option selected value="8">MYTHIC +8</option>
+                                    <option selected value="9">MYTHIC +9</option>
+                                    <option selected value="10">MYTHIC +10</option>
+                                    <option selected value="11">MYTHIC +11</option>
+                                    <option selected value="12">MYTHIC +12</option>
+                                    <option selected value="13">MYTHIC +13</option>
+                                    <option selected value="14">MYTHIC +14</option>
+                                    <option selected value="15">MYTHIC +15</option>
+                                </select>
+                            </div>
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_2">
+                            </div>
+                        </div>
+                            <div class="cart__main__footer__options">
+                                <p>Choose option</p>
+                                <div class="input">
+                                    <input class="options" type="checkbox" name="option" id="timer_2" value="1" onchange="changePriceOpt(this, document.getElementById('select_2').value, 'price_3_2')">
+                                    <label for="timer_2">Timer</label>
+                                    <label for="timer_2">1$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="checkbox" name="option" id="specific_2" value="2" onchange="changePriceOpt(this, document.getElementById('select_2').value, 'price_3_2')">
+                                    <label for="specific_2">Speciffic dungeon</label>
+                                    <label for="specific_2">2$</label>
+                                </div>
+
+                                <div class="input">
+                                    <input class="options" type="radio" checked name="option" id="loot_2_1" value="5" onchange="document.getElementById('price_3_2').innerHTML = +document.getElementById('price_3_2').innerHTML - +2;">
+                                    <label for="loot_2_1">Loot traider 1</label>
+                                    <label for="loot_2_1">5$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="loot_2_2" value="7" onchange="document.getElementById('price_3_2').innerHTML = +document.getElementById('price_3_2').innerHTML + +2;">
+                                    <label for="loot_2_2">Loot traider 2</label>
+                                    <label for="loot_2_2">7$</label>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="cart__main__footer__buy">
+                        <p id="price_3_2">5</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+ <div class="cart_3">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>MYTHIC +0 8/8</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Choose difficulty</p>
+                                <select id="select_1">
+                                    <option selected value="100">MYTHIC</option>
+                                </select>
+                            </div>
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_3">
+                            </div>
+                        </div>
+                            <div class="cart__main__footer__options">
+                                <p>Choose option</p>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="loot_3_1" value="1" checked onchange="document.getElementById('price_3_3').innerHTML = +this.value + +document.getElementById('select_1').value">
+                                    <label for="loot_3_1">Loot traider 1</label>
+                                    <label for="loot_3_1">1$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="loot_3_2" value="11" onchange="document.getElementById('price_3_3').innerHTML = +this.value + +document.getElementById('select_1').value">
+                                    <label for="loot_3_2">Loot traider 2</label>
+                                    <label for="loot_3_2">11$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="loot_3_3" value="14" onchange="document.getElementById('price_3_3').innerHTML = +this.value + +document.getElementById('select_1').value;">
+                                    <label for="loot_3_3">Loot traider 3</label>
+                                    <label for="loot_3_3">14$</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="cart__main__footer__buy">
+                        <p id="price_3_3">11</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,135 @@
+.cart_1{
+    background: url('../img/01.png') no-repeat center;
+    display: flex;
+    height: 882px;
+}
+.cart_2{
+    background: url('../img/02.png') no-repeat center;
+    display: flex;
+    height: 882px;
+}
+.cart_3{
+    background: url('../img/03.png') no-repeat center;
+    display: flex;
+    height: 882px;
+}
+.left_img{
+    width: 40%;
+}
+.cart__main{
+    margin-top: 6rem;
+    margin-left: -2em;
+    text-align: center;
+
+}
+.cart__main h1{
+    margin-block-start: 0;
+    margin-block-end: 0em;
+}
+.cart__main h1{
+    font-size: 72px;
+    color: white;
+}
+.cart__main__desc{
+    text-align: left;
+    padding-left: 10rem;
+    margin-left: 64px;
+    background: url('../img/Слой 74 копия.png') no-repeat;
+    width: 846px;
+    height: 316px;
+}
+.cart__main__desc h3{
+    padding-top: 2rem;
+    margin-top: 0;
+}
+.cart__main__desc button{
+    background: url('../img/Слой 10 копия 11.png') no-repeat;
+    font-family: cambria;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.cart__main__footer h2{
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+.cart__main__footer__form{
+    display: flex;
+    justify-content: space-around;
+}
+.cart__main__footer__options{
+    padding-right: 6rem;
+    text-align: left;
+    color: white;
+}
+.cart__main__footer__options p{
+    margin-top: 0;
+    text-align: center;
+}
+.options{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.options+label{
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.options+label::before{
+    margin-right: 1rem;
+    content: '';
+    background-image: url("../img/Слой 30 копия 5.png");
+    width: 2em;
+    height: 2em;
+    background-size: 100% 100%;
+}
+.options:checked+label::before{
+    background-image: url("../img/Фигура 1.png");
+    width: 2em;
+    height: 2em;
+    background-size: 100% 100%;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.cart__main__footer__input__target{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.cart__main__footer__input__target p{
+    color: white;
+    font-size: 18px;
+    margin-right: 2rem;
+}
+.cart__main__footer__input__target input{
+    width: 276px;
+    height: 33px;
+    margin: auto;
+}
+.cart__main__footer__input__target select{
+    padding-left: 5rem;
+    width: 284px;
+    height: 63px;
+    background: url("../img/Слой 76 копия.png") no-repeat;
+    font-size: 24px;
+    font-family: cambria;
+    font-weight: bold;
+}
+.buy{
+    width: 255px;
+    height: 75px;
+    background: url("../img/BUY NOW_.png") no-repeat;
+}
+.cart__main__footer__buy{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-family: cambria;
+    font-size: 32px;
+    color: white;
+}

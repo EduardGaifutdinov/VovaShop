@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="cart_8">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>TOWER TOWER OF THE DUMNED</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Choose difficulty</p>
+                                <select name="select" onChange="document.getElementById('price_8').innerHTML = this.value">
+                                    <option selected value="1">LAYER 1</option>
+                                    <option selected value="2">LAYER 2</option>
+                                    <option selected value="3">LAYER 3</option>
+                                    <option selected value="4">LAYER 4</option>
+                                    <option selected value="5">LAYER 5</option>
+                                    <option selected value="6">LAYER 6</option>
+                                    <option selected value="7">LAYER 7</option>
+                                    <option selected value="8">LAYER 8</option>
+                                </select>
+                            </div>
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__main__footer__buy">
+                        <p id="price_8">1</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div class="cart_9">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>TWISTING CORRIDORS</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Choose difficulty</p>
+                                <select name="select" onChange="document.getElementById('price_9').innerHTML = this.value">
+                                    <option selected value="1">LAYER 1</option>
+                                    <option selected value="2">LAYER 2</option>
+                                    <option selected value="3">LAYER 3</option>
+                                    <option selected value="4">LAYER 4</option>
+                                    <option selected value="5">LAYER 5</option>
+                                    <option selected value="6">LAYER 6</option>
+                                    <option selected value="7">LAYER 7</option>
+                                    <option selected value="8">LAYER 8</option>
+                                </select>
+                            </div>
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_9">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__main__footer__buy">
+                        <p id="price_9">1</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

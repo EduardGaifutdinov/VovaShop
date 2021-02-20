@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="cart_4">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>NORMAL</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Choose difficulty</p>
+                                <select id="select_4_1">
+                                    <option selected value="100">All bosses</option>
+                                </select>
+                            </div>
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_4">
+                            </div>
+                        </div>
+                            <div class="cart__main__footer__options">
+                                <p>Choose option</p>
+                                <div class="input">
+                                    <input class="options" type="radio" checked name="option" id="Standard_1" value="20" onchange="document.getElementById('price_4_1').innerHTML = +this.value + +document.getElementById('select_4_1').value;">
+                                    <label for="Standard_1">Standart</label>
+                                    <label for="Standard_1">0.0$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="Advanced_1" value="30" onchange="document.getElementById('price_4_1').innerHTML = +this.value + +document.getElementById('select_4_1').value;">
+                                    <label for="Advanced_1">Advanced</label>
+                                    <label for="Advanced_1">0.0$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="Premium_1" value="40" onchange="document.getElementById('price_4_1').innerHTML = +this.value + +document.getElementById('select_4_1').value;">
+                                    <label for="Premium_1">Premium</label>
+                                    <label for="Premium_1">0.0$</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="cart__main__footer__buy">
+                        <p id="price_4_1">100</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div class="cart_5">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>Heroic</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Choose difficulty</p>
+                                <select id="select_4_2" onChange="document.getElementById('price_4_2').innerHTML = +document.getElementById('select_4_2').value + 10; document.getElementById('Standard_2').checked = true">
+                                    <option selected value="100">3/10</option>
+                                    <option selected value="200">7/10</option>
+                                    <option selected value="300">9/10</option>
+                                    <option selected value="400">10/10</option>
+                                </select>
+                            </div>
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_5">
+                            </div>
+                        </div>
+                            <div class="cart__main__footer__options">
+                                <p>Choose option</p>
+                                <div class="input">
+                                    <input class="options" type="radio" checked name="option" id="Standard_2" value="10" onchange="document.getElementById('price_4_2').innerHTML = +this.value + +document.getElementById('select_4_2').value;">
+                                    <label for="Standard_2">Standard</label>
+                                    <label for="Standard_2">10$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="Advanced_2" value="20" onchange="document.getElementById('price_4_2').innerHTML = +this.value + +document.getElementById('select_4_2').value;">
+                                    <label for="Advanced_2">Advanced</label>
+                                    <label for="Advanced_2">20$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="Premium_2" value="30" onchange="document.getElementById('price_4_2').innerHTML = +this.value + +document.getElementById('select_4_2').value;">
+                                    <label for="Premium_2">Premium</label>
+                                    <label for="Premium_2">30$</label>
+
+                                </div>
+                            </div>
+                    </div>
+                     <div class="cart__main__footer__buy">
+                        <p id="price_4_2">100</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div class="cart_6">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>STONEBONES GENERALS</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_6">
+                            </div>
+                        </div>
+                            <div class="cart__main__footer__options">
+                                <p>Choose option</p>
+                                <div class="input">
+                                    <input class="options" type="radio" checked name="option" id="Normal" value="10" onchange="document.getElementById('price_4_3').innerHTML = +this.value">
+                                    <label for="Normal">Normal</label>
+                                    <label for="Normal">0.0$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="Heroic" value="20" onchange="document.getElementById('price_4_3').innerHTML = +this.value">
+                                    <label for="Heroic">Heroic</label>
+                                    <label for="Heroic">0.0$</label>
+                                </div>
+                            </div>
+                    </div>
+                     <div class="cart__main__footer__buy">
+                        <p id="price_4_3">10</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div class="cart_7">
+        <div class="left_img"></div>
+        <div class="cart__main">
+            <h1>SIRE DENATHRIUS</h1>
+            <div class="cart__main__desc">
+                <h3>Product Description:</h3>
+                <p>qwe</p>
+                <button>LEARN MORE</button>
+                <h3>Loot distribution policy:</h3>
+                <p></p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="cart__main__footer">
+                <h2>Lets do it! Order now</h2>
+                <form name="buy" method="post" action="">{% csrf_token %}
+                    <div class="cart__main__footer__form">
+                        <div class="cart__main__footer__input">
+                            <div class="cart__main__footer__input__target">
+                                <p>Enter your e-mail</p>
+                                <input type="text" name="e-mail" id="e-mail_7">
+                            </div>
+                        </div>
+                            <div class="cart__main__footer__options">
+                                <p>Choose option</p>
+                                <div class="input">
+                                    <input class="options" type="radio" checked name="option" id="Normal_2" value="10" onchange="document.getElementById('price_4_3').innerHTML = +this.value">
+                                    <label for="Normal_2">Normal</label>
+                                    <label for="Normal_2">0.0$</label>
+                                </div>
+                                <div class="input">
+                                    <input class="options" type="radio" name="option" id="Heroic_2" value="20" onchange="document.getElementById('price_4_3').innerHTML = +this.value">
+                                    <label for="Heroic_2">Heroic</label>
+                                    <label for="Heroic_2">0.0$</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="cart__main__footer__buy">
+                        <p id="price_4_4">10</p>
+                        <input class="buy" type="submit" name="submit" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
